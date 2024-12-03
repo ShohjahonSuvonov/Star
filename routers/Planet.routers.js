@@ -13,7 +13,7 @@ const options = {
       description: 'API to manage stars in the universe',
     },
   },
-  apis: ['./routes/star.routes.js'], // Path to your API routes
+  apis: ['./routers/Star.routers.js'], // Path to your API routes
 };
 
 const swaggerSpec = swaggerJsdoc(options);

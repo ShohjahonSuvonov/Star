@@ -4,8 +4,8 @@ const setupSwagger = require('./swagger'); // Swagger konfiguratsiyasini chaqiri
 const app = express();
 
 // Route'larni qo'shish (masalan, planetlar va yulduzlar)
-const planetRoutes = require('./routes/planet.routes'); // planet routes faylini import qilish
-const starRoutes = require('./routes/star.routes'); // star routes faylini import qilish
+const planetRoutes = require('./routers/Planet.routers'); // planet routes faylini import qilish
+const starRoutes = require('./routers/Star.routers'); // star routes faylini import qilish
 
 app.use('/planets', planetRoutes);  // Planetlar uchun router
 app.use('/stars', starRoutes);      // Yulduzlar uchun router
